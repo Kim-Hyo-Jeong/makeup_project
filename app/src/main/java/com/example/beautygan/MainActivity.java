@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        baseLayout = findViewById(R.id.baseLayout);
+        baseLayout = findViewById(R.id.infoLayout);
         ActionBar actionBar = getSupportActionBar();
         assert actionBar != null; // NullPointerException 방지
 
