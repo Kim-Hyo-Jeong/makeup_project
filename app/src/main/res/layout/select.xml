@@ -34,8 +34,6 @@
         android:id="@+id/btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="버튼"
-        android:textAllCaps="false"
-        android:onClick="buttonclick" />
+        android:text="그냥 버튼" />
 
 </LinearLayout>

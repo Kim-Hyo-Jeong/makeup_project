@@ -19,7 +19,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".info" />
+        <activity
+            android:name=".info"
+            android:parentActivityName=".select" />
     </application>
 
 </manifest>

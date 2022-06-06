@@ -72,7 +72,8 @@ public class info extends AppCompatActivity {
         int id = item.getItemId();
         switch (id) {
             case android.R.id.home: {
-                Toast.makeText(this, "뒤로가기 버튼", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "뒤로가기 버튼", Toast.LENGTH_SHORT).show();
+                finish();
                 return true;
             }
             case R.id.ic_youtube: {

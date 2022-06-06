@@ -57,7 +57,9 @@ public class select extends AppCompatActivity {
                 return true;
             }
             case R.id.ic_select: {
-                Toast.makeText(this, "선택 버튼", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(this, info.class);
+                startActivity(intent);
+                Toast.makeText(this, "메이크업을 선택하였습니다", Toast.LENGTH_SHORT).show();
                 return true;
             }
         }
@@ -69,10 +71,5 @@ public class select extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null)
             actionBar.hide();
-    }
-
-    public void buttonclick(View view) {
-        Intent intent = new Intent(this, info.class);
-        startActivity(intent);
     }
 }
