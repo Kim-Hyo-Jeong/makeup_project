@@ -11,9 +11,9 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class listAdapter_makeup_information extends BaseAdapter {
+public class info_listAdapter extends BaseAdapter {
     Context context;
-    ArrayList<list_makeup_information> list_itemArrayList;
+    ArrayList<info_list> list_itemArrayList;
 
     ImageView pr_image;
     TextView pr_brand;
@@ -21,7 +21,7 @@ public class listAdapter_makeup_information extends BaseAdapter {
     TextView pr_price;
     ImageView pr_url;
 
-    public listAdapter_makeup_information(Context context, ArrayList<list_makeup_information> list_itemArrayList) {
+    public info_listAdapter(Context context, ArrayList<info_list> list_itemArrayList) {
         this.context = context;
         this.list_itemArrayList = list_itemArrayList;
     }
@@ -44,7 +44,7 @@ public class listAdapter_makeup_information extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if(convertView==null) {
-            convertView = LayoutInflater.from(context).inflate(R.layout.makeup_information, null);
+            convertView = LayoutInflater.from(context).inflate(R.layout.info2, null);
             pr_image = (ImageView) convertView.findViewById(R.id.pr_image);
             pr_brand = (TextView) convertView.findViewById(R.id.pr_brand);
             pr_name = (TextView) convertView.findViewById(R.id.pr_name);

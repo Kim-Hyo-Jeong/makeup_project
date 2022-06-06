@@ -1,13 +1,13 @@
 package com.example.beautygan;
 
-public class list_makeup_information {
+public class info_list {
     private int pr_image;
     private String pr_brand;
     private String pr_name;
     private String pr_price;
     private int pr_url;
 
-    public list_makeup_information(int pr_image, String pr_brand, String pr_name, String pr_price, int pr_url) {
+    public info_list(int pr_image, String pr_brand, String pr_name, String pr_price, int pr_url) {
         this.pr_image = pr_image;
         this.pr_brand = pr_brand;
         this.pr_name = pr_name;

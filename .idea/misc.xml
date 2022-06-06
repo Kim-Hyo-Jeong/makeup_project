@@ -6,14 +6,20 @@
         <entry key="..\:/Android_Project/beautygan/app/src/main/res/drawable-anydpi/icon_previous.xml" value="0.1475" />
         <entry key="..\:/Android_Project/beautygan/app/src/main/res/drawable-xxhdpi/icon_previous.xml" value="0.1475" />
         <entry key="..\:/Android_Project/beautygan/app/src/main/res/layout/activity_main.xml" value="0.2086956590966153" />
+        <entry key="..\:/Android_Project/beautygan/app/src/main/res/layout/info1.xml" value="0.2578125" />
+        <entry key="..\:/Android_Project/beautygan/app/src/main/res/layout/info2.xml" value="0.2578125" />
         <entry key="..\:/Android_Project/beautygan/app/src/main/res/layout/info_activity.xml" value="0.2578125" />
         <entry key="..\:/Android_Project/beautygan/app/src/main/res/layout/item.xml" value="0.2754782700075322" />
+        <entry key="..\:/Android_Project/beautygan/app/src/main/res/layout/makeup_info1.xml" value="0.2578125" />
+        <entry key="..\:/Android_Project/beautygan/app/src/main/res/layout/makeup_info2.xml" value="0.2578125" />
         <entry key="..\:/Android_Project/beautygan/app/src/main/res/layout/makeup_information.xml" value="0.4173913181932306" />
+        <entry key="..\:/Android_Project/beautygan/app/src/main/res/layout/makeup_select.xml" value="0.2578125" />
         <entry key="..\:/Android_Project/beautygan/app/src/main/res/layout/makeupinfo.xml" value="0.1" />
         <entry key="..\:/Android_Project/beautygan/app/src/main/res/layout/makeupinformation.xml" value="0.2578125" />
         <entry key="..\:/Android_Project/beautygan/app/src/main/res/menu/memu1.xml" value="0.2754782700075322" />
         <entry key="..\:/Android_Project/beautygan/app/src/main/res/menu/menu.xml" value="0.2754782700075322" />
         <entry key="..\:/Android_Project/beautygan/app/src/main/res/menu/menu1.xml" value="0.2754782700075322" />
+        <entry key="..\:/Android_Project/beautygan/app/src/main/res/menu/menu_info.xml" value="0.2578125" />
       </map>
     </option>
   </component>
