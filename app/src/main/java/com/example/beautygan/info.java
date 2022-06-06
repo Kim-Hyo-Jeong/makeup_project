@@ -75,11 +75,11 @@ public class info extends AppCompatActivity {
                 Toast.makeText(this, "뒤로가기 버튼", Toast.LENGTH_SHORT).show();
                 return true;
             }
-            case R.id.icon_youtube: {
+            case R.id.ic_youtube: {
                 Toast.makeText(this, "유튜브 버튼", Toast.LENGTH_SHORT).show();
                 return true;
             }
-            case R.id.icon_download: {
+            case R.id.ic_download: {
                 Toast.makeText(this, "다운로드 버튼", Toast.LENGTH_SHORT).show();
                 return true;
             }
