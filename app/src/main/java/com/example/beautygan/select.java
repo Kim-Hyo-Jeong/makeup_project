@@ -58,6 +58,26 @@ public class select extends AppCompatActivity {
         tabFestival.setContent(R.id.tabFestival);
         tabFestival.setIndicator("축제");
         tabHost.addTab(tabFestival);
+
+        TabHost.TabSpec tabWedding = tabHost.newTabSpec("웨딩");
+        tabWedding.setContent(R.id.tabWedding);
+        tabWedding.setIndicator("웨딩");
+        tabHost.addTab(tabWedding);
+
+        TabHost.TabSpec tabTrip = tabHost.newTabSpec("여행");
+        tabTrip.setContent(R.id.tabTrip);
+        tabTrip.setIndicator("여행");
+        tabHost.addTab(tabTrip);
+
+        TabHost.TabSpec tab1 = tabHost.newTabSpec("화사");
+        tab1.setContent(R.id.tab1);
+        tab1.setIndicator("화사");
+        tabHost.addTab(tab1);
+
+        TabHost.TabSpec tab2 = tabHost.newTabSpec("스모키");
+        tab2.setContent(R.id.tab2);
+        tab2.setIndicator("스모키");
+        tabHost.addTab(tab2);
     }
     // 액션버튼 메뉴 액션바에 집어 넣기
     public boolean onCreateOptionsMenu(Menu menu_select) {

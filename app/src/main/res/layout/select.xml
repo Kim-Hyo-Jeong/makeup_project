@@ -40,11 +40,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical" >
-
-            <TabWidget
-                android:id="@android:id/tabs"
+            <HorizontalScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="none" >
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </HorizontalScrollView>
 
             <FrameLayout
                 android:id="@android:id/tabcontent"
@@ -63,14 +68,12 @@
                         android:padding="10dp"
                         android:text="데이트 1"
                         android:textSize="30dp" />
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="60dp"
                         android:padding="10dp"
                         android:text="데이트 2"
                         android:textSize="30dp" />
-
                 </LinearLayout>
 
                 <LinearLayout
@@ -110,6 +113,86 @@
                         android:layout_height="60dp"
                         android:padding="10dp"
                         android:text="축제 2"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabWedding"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:padding="10dp"
+                        android:text="웨딩 1"
+                        android:textSize="30dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:padding="10dp"
+                        android:text="웨딩 2"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tabTrip"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:padding="10dp"
+                        android:text="여행 1"
+                        android:textSize="30dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:padding="10dp"
+                        android:text="여행 2"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:padding="10dp"
+                        android:text="화사 1"
+                        android:textSize="30dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:padding="10dp"
+                        android:text="화사 2"
+                        android:textSize="30dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:padding="10dp"
+                        android:text="스모키 1"
+                        android:textSize="30dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:padding="10dp"
+                        android:text="스모키 2"
                         android:textSize="30dp" />
                 </LinearLayout>
             </FrameLayout>
