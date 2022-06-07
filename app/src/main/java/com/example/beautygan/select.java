@@ -1,20 +1,20 @@
 package com.example.beautygan;
 
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.TabHost;
 import android.widget.Toast;
 
-public class select extends AppCompatActivity {
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 
+public class select extends AppCompatActivity {
+    TabHost tabHost;
     LinearLayout baseLayout;
 
     @Override
@@ -37,9 +37,27 @@ public class select extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setHomeAsUpIndicator(R.drawable.ic_previous);
 
-
         // (4) 액션바 숨기기
         // hideActionBar();
+
+        // 탭 만드는 중
+        tabHost = (TabHost) findViewById(R.id.tabhost);
+        tabHost.setup();
+
+        TabHost.TabSpec tabDate = tabHost.newTabSpec("데이트");
+        tabDate.setContent(R.id.tabDate);
+        tabDate.setIndicator("데이트");
+        tabHost.addTab(tabDate);
+
+        TabHost.TabSpec tabHoliday = tabHost.newTabSpec("기념일");
+        tabHoliday.setContent(R.id.tabHoliday);
+        tabHoliday.setIndicator("기념일");
+        tabHost.addTab(tabHoliday);
+
+        TabHost.TabSpec tabFestival = tabHost.newTabSpec("축제");
+        tabFestival.setContent(R.id.tabFestival);
+        tabFestival.setIndicator("축제");
+        tabHost.addTab(tabFestival);
     }
     // 액션버튼 메뉴 액션바에 집어 넣기
     public boolean onCreateOptionsMenu(Menu menu_select) {
