@@ -6,13 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".select"
-    android:padding="10dp" >
+    tools:context=".select">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="10dp" >
+        android:padding="40dp" >
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -20,12 +19,10 @@
 
             <ImageView
                 android:id="@+id/image_nomakeup"
-                android:layout_width="300dp"
-                android:layout_height="300dp"
-                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
                 android:scaleType="fitCenter"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
                 android:src="@drawable/img_nomakeup" />
         </RelativeLayout>
 
@@ -48,33 +45,71 @@
                 <TabWidget
                     android:id="@android:id/tabs"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tab_bg"/>
             </HorizontalScrollView>
 
             <FrameLayout
                 android:id="@android:id/tabcontent"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-
-                <LinearLayout
-                    android:id="@+id/tabDate"
+                android:layout_height="match_parent"
+                android:padding="5dp" >
+                <HorizontalScrollView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:padding="10dp" >
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="60dp"
-                        android:padding="10dp"
-                        android:text="데이트 1"
-                        android:textSize="30dp" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="60dp"
-                        android:padding="10dp"
-                        android:text="데이트 2"
-                        android:textSize="30dp" />
-                </LinearLayout>
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:id="@+id/tabDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/btnDateSpring1"
+                            android:drawableTop="@drawable/img_size_date_spring1"
+                            android:text="봄 데이트 1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FAACA8"
+                            android:layout_margin="10dp"
+                            android:padding="5dp"
+                            android:textSize="16sp"
+                            android:layout_gravity="center"/>
+
+                        <Button
+                            android:id="@+id/btnDateSummer1"
+                            android:drawableTop="@drawable/img_size_date_summer1"
+                            android:text="여름 데이트 1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FAACA8"
+                            android:layout_margin="10dp"
+                            android:padding="5dp"
+                            android:textSize="16sp"
+                            android:layout_gravity="center"/>
+
+                        <Button
+                            android:id="@+id/btnDateFall1"
+                            android:drawableTop="@drawable/img_size_date_fall1"
+                            android:text="가을 데이트 1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FAACA8"
+                            android:layout_margin="10dp"
+                            android:padding="5dp"
+                            android:textSize="16sp"
+                            android:layout_gravity="center"/>
+                        <Button
+                            android:id="@+id/btnDateWinter1"
+                            android:drawableTop="@drawable/img_size_date_winter1"
+                            android:text="겨울 데이트 1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FAACA8"
+                            android:layout_margin="10dp"
+                            android:padding="4dp"
+                            android:textSize="16sp"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+                </HorizontalScrollView>
 
                 <LinearLayout
                     android:id="@+id/tabHoliday"

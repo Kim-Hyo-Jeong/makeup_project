@@ -5,6 +5,19 @@
       <map>
         <entry key="..\:/Android_Project/beautygan/app/src/main/res/drawable-anydpi/icon_previous.xml" value="0.1475" />
         <entry key="..\:/Android_Project/beautygan/app/src/main/res/drawable-xxhdpi/icon_previous.xml" value="0.1475" />
+        <entry key="..\:/Android_Project/beautygan/app/src/main/res/drawable/img_size_date_fall1.xml" value="0.21" />
+        <entry key="..\:/Android_Project/beautygan/app/src/main/res/drawable/img_size_date_spring1.xml" value="0.21" />
+        <entry key="..\:/Android_Project/beautygan/app/src/main/res/drawable/img_size_date_summer1.xml" value="0.21" />
+        <entry key="..\:/Android_Project/beautygan/app/src/main/res/drawable/img_size_date_winter1.xml" value="0.21" />
+        <entry key="..\:/Android_Project/beautygan/app/src/main/res/drawable/img_size_fall1.xml" value="0.22" />
+        <entry key="..\:/Android_Project/beautygan/app/src/main/res/drawable/img_size_spring1.xml" value="0.164" />
+        <entry key="..\:/Android_Project/beautygan/app/src/main/res/drawable/img_size_summer1.xml" value="0.164" />
+        <entry key="..\:/Android_Project/beautygan/app/src/main/res/drawable/img_size_winter1.xml" value="0.22" />
+        <entry key="..\:/Android_Project/beautygan/app/src/main/res/drawable/imgsize.xml" value="0.1995" />
+        <entry key="..\:/Android_Project/beautygan/app/src/main/res/drawable/tab_background_unselected.xml" value="0.1" />
+        <entry key="..\:/Android_Project/beautygan/app/src/main/res/drawable/tab_bg.xml" value="0.1" />
+        <entry key="..\:/Android_Project/beautygan/app/src/main/res/drawable/tab_bg_selected.xml" value="0.1" />
+        <entry key="..\:/Android_Project/beautygan/app/src/main/res/drawable/tab_bg_unselected.xml" value="0.1" />
         <entry key="..\:/Android_Project/beautygan/app/src/main/res/layout/activity_main.xml" value="0.2086956590966153" />
         <entry key="..\:/Android_Project/beautygan/app/src/main/res/layout/info1.xml" value="0.2578125" />
         <entry key="..\:/Android_Project/beautygan/app/src/main/res/layout/info2.xml" value="0.2578125" />
@@ -16,8 +29,9 @@
         <entry key="..\:/Android_Project/beautygan/app/src/main/res/layout/makeup_select.xml" value="0.2578125" />
         <entry key="..\:/Android_Project/beautygan/app/src/main/res/layout/makeupinfo.xml" value="0.1" />
         <entry key="..\:/Android_Project/beautygan/app/src/main/res/layout/makeupinformation.xml" value="0.2578125" />
-        <entry key="..\:/Android_Project/beautygan/app/src/main/res/layout/select.xml" value="0.1" />
+        <entry key="..\:/Android_Project/beautygan/app/src/main/res/layout/select.xml" value="0.15026087454956302" />
         <entry key="..\:/Android_Project/beautygan/app/src/main/res/layout/select2.xml" value="0.2578125" />
+        <entry key="..\:/Android_Project/beautygan/app/src/main/res/layout/select_date.xml" value="0.2578125" />
         <entry key="..\:/Android_Project/beautygan/app/src/main/res/menu/memu1.xml" value="0.2754782700075322" />
         <entry key="..\:/Android_Project/beautygan/app/src/main/res/menu/menu.xml" value="0.2754782700075322" />
         <entry key="..\:/Android_Project/beautygan/app/src/main/res/menu/menu1.xml" value="0.2754782700075322" />
