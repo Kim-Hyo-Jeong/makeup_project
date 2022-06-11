@@ -6,6 +6,9 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TabHost;
 import android.widget.Toast;
@@ -16,6 +19,10 @@ import androidx.appcompat.app.AppCompatActivity;
 public class select extends AppCompatActivity {
     TabHost tabHost;
     LinearLayout baseLayout;
+
+    Button btnDateSpring1, btnDateSummer1, btnDateFall1, btnDateWinter1;
+    ImageView makeupImage;
+    boolean i = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,26 +66,82 @@ public class select extends AppCompatActivity {
         tabFestival.setIndicator("축제");
         tabHost.addTab(tabFestival);
 
-        TabHost.TabSpec tabWedding = tabHost.newTabSpec("웨딩");
-        tabWedding.setContent(R.id.tabWedding);
-        tabWedding.setIndicator("웨딩");
-        tabHost.addTab(tabWedding);
+        TabHost.TabSpec tabPortrait = tabHost.newTabSpec("증명사진");
+        tabPortrait.setContent(R.id.tabPortrait);
+        tabPortrait.setIndicator("증명사진");
+        tabHost.addTab(tabPortrait);
 
-        TabHost.TabSpec tabTrip = tabHost.newTabSpec("여행");
-        tabTrip.setContent(R.id.tabTrip);
-        tabTrip.setIndicator("여행");
-        tabHost.addTab(tabTrip);
+        TabHost.TabSpec tabSmokey = tabHost.newTabSpec("스모키");
+        tabSmokey.setContent(R.id.tabSmokey);
+        tabSmokey.setIndicator("스모키");
+        tabHost.addTab(tabSmokey);
 
-        TabHost.TabSpec tab1 = tabHost.newTabSpec("화사");
-        tab1.setContent(R.id.tab1);
-        tab1.setIndicator("화사");
-        tabHost.addTab(tab1);
+        TabHost.TabSpec tabNatural = tabHost.newTabSpec("내추럴");
+        tabNatural.setContent(R.id.tabNatural);
+        tabNatural.setIndicator("내추럴");
+        tabHost.addTab(tabNatural);
 
-        TabHost.TabSpec tab2 = tabHost.newTabSpec("스모키");
-        tab2.setContent(R.id.tab2);
-        tab2.setIndicator("스모키");
-        tabHost.addTab(tab2);
+        // 버튼 누르면 이미지 변경
+        btnDateSpring1 = findViewById(R.id.btnDateSpring1);
+        btnDateSummer1 = findViewById(R.id.btnDateSummer1);
+        btnDateFall1 = findViewById(R.id.btnDateFall1);
+        btnDateWinter1 = findViewById(R.id.btnDateWinter1);
+        makeupImage = findViewById(R.id.image_nomakeup);
+
+        btnDateSpring1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (i == true) {
+                    makeupImage.setImageResource(R.drawable.img_makeup_spring1);
+                    i = false;
+                } else {
+                    makeupImage.setImageResource(R.drawable.img_nomakeup);
+                    i = true;
+                }
+            }
+        });
+
+        btnDateSummer1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (i == true) {
+                    makeupImage.setImageResource(R.drawable.img_makeup_summer1);
+                    i = false;
+                } else {
+                    makeupImage.setImageResource(R.drawable.img_nomakeup);
+                    i = true;
+                }
+            }
+        });
+
+        btnDateFall1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (i == true) {
+                    makeupImage.setImageResource(R.drawable.img_makeup_fall1);
+                    i = false;
+                } else {
+                    makeupImage.setImageResource(R.drawable.img_nomakeup);
+                    i = true;
+                }
+            }
+        });
+
+        btnDateWinter1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (i == true) {
+                    makeupImage.setImageResource(R.drawable.img_makeup_winter1);
+                    i = false;
+                } else {
+                    makeupImage.setImageResource(R.drawable.img_nomakeup);
+                    i = true;
+                }
+            }
+        });
     }
+
+
     // 액션버튼 메뉴 액션바에 집어 넣기
     public boolean onCreateOptionsMenu(Menu menu_select) {
         getMenuInflater().inflate(R.menu.menu_select, menu_select);

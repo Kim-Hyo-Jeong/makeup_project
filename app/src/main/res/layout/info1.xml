@@ -23,7 +23,7 @@
                 android:layout_height="450dp"
                 android:layout_centerInParent="true"
                 android:scaleType="fitCenter"
-                android:src="@drawable/img_makeup" />
+                android:src="@drawable/img_makeup_spring1" />
 
         </RelativeLayout>
     </LinearLayout>
